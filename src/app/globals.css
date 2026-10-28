@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-midnight: #11151B;
+  --color-oxblood: #4A1722;
+  --color-ivory: #F4F0E8;
+  --color-brass: #B49A68;
+  --color-graphite: #383A3E;
+  --color-stone: #9D968B;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #11151B;
+  color: #F4F0E8;
+  overflow-x: hidden;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom focus styles for high-end accessibility */
+:focus-visible {
+  outline: 2px solid #B49A68;
+  outline-offset: 3px;
+}
+
+/* Fine architectural grid and security-paper fine line textures */
+.bg-grid-subtle {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(180, 154, 104, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(180, 154, 104, 0.04) 1px, transparent 1px);
+}
+
+.bg-grid-ivory {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(56, 58, 62, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 58, 62, 0.04) 1px, transparent 1px);
+}
+
+.bg-radial-oxblood {
+  background: radial-gradient(circle at 85% 15%, rgba(74, 23, 34, 0.45) 0%, rgba(17, 21, 27, 0) 65%);
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(circle at 50% 50%, rgba(24, 30, 38, 0.6) 0%, rgba(17, 21, 27, 1) 100%);
+}
+
+/* Subtle editorial watermarks */
+.watermark-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* Fine hairline rules */
+.hairline-brass {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #B49A68 50%, transparent 100%);
+  opacity: 0.35;
+}
+
+.hairline-brass-solid {
+  height: 1px;
+  background-color: rgba(180, 154, 104, 0.3);
+}
+
+/* Custom scrollbar for sleek desktop feel */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #11151B;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A3340;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B49A68;
+}
+
