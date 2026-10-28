@@ -5,7 +5,6 @@ import { ProfessionalProfile } from "@/components/ProfessionalProfile";
 import { FactsStrip } from "@/components/FactsStrip";
 import { CoreExpertise } from "@/components/CoreExpertise";
 import { CareerJourney } from "@/components/CareerJourney";
-import { LeadershipSection } from "@/components/LeadershipSection";
 import { RecognitionSection } from "@/components/RecognitionSection";
 import { QualificationsSection } from "@/components/QualificationsSection";
 import { ClosingStatement } from "@/components/ClosingStatement";
@@ -32,19 +31,16 @@ export default function Home() {
       {/* 06: The Career Journey */}
       <CareerJourney />
 
-      {/* 07: Leadership & Professional Responsibility */}
-      <LeadershipSection />
-
-      {/* 08: Professional Recognition */}
+      {/* 07: Professional Recognition */}
       <RecognitionSection />
 
-      {/* 09: Professional Qualifications */}
+      {/* 08: Professional Qualifications */}
       <QualificationsSection />
 
-      {/* 10: Closing Statement */}
+      {/* 09: Closing Statement */}
       <ClosingStatement />
 
-      {/* 11: Footer & Institutional Distinction */}
+      {/* 10: Footer & Institutional Distinction */}
       <Footer />
     </main>
   );

@@ -319,7 +319,7 @@ export const portfolioData: PortfolioData = {
     watermarkWord: "RESPONSIBILITY",
   },
   recognition: {
-    sectionLabel: "05 / RECOGNITION",
+    sectionLabel: "04 / RECOGNITION",
     heading: "Recognition associated with performance.",
     supportingText:
       "Professional recognition recorded during two consecutive financial years.",
@@ -341,7 +341,7 @@ export const portfolioData: PortfolioData = {
     ],
   },
   qualifications: {
-    sectionLabel: "06 / PROFESSIONAL DEVELOPMENT",
+    sectionLabel: "05 / PROFESSIONAL DEVELOPMENT",
     heading: "A foundation in professional learning.",
     supportingText:
       "Professional banking qualifications and specialised development form part of the career record.",
